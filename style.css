@@ -1,17 +1,144 @@
+@font-face {
+    font-family: "MontserratMedium";
+    src: url(./fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "MontserratBold";
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "MontserratSemiBold";
+    src: url(./fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "LatoRegular";
+    src: url(./fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: "LatoBold";
+    src: url(./fonts/Lato-Bold.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-main {
+:root {
+    --colorGrey: rgb(32, 33, 38);
+    --colorWhite: rgb(255, 255, 255);
+    --colorLightGrey: rgb(41, 42, 47);
+    --colorUltraLightGrey: rgb(204, 204, 204);
+    --colorYellow: rgb(254, 203, 0);
+    --colorFontsGrey: rgb(45, 45, 45);
+    --colorFontsWhite: rgb(255, 255, 255);
+}
+
+.wrapper {
     margin: 0 auto;
-    width: 100%;
     height: 100vh;
+    background-color: white;
+    width: 100%;
     max-width: 900px;
-    background-color: black;
+    border: 1px solid black;
+    display: flex;
+}
+
+aside {
+    background-color: var(--colorGrey);
+    height: 100%;
+    width: 250px;
+}
+
+.content-wrapper {
+    background-color: var(--colorWhite);
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin-top: 50px;
+    padding-top: 20px;
+    height: 100px;
+    display: block;
+    background-color: var(--colorYellow);
+    align-items: center;
+    padding-left: 10%;
 }
 
 h1 {
-    color: white;
+    margin: auto 0;
+    font-family: "MontserratBold";
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+h1 > span {
+    font-family: "MontserratMedium";
+    font-weight: 300;
+}
+
+header > p {
+    font-family: "MontserratMedium";
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+main {
+    padding: 5% 10% 5% 10%;
+}
+
+.section {
+    padding-bottom: 20px;
+}
+
+.section > h2 {
+    font-family: "LatoBold";
+    color: var(--colorFontsGrey);
+    text-transform: uppercase;
     font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.skills_wrapper {
+    margin-left: 20%;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills_wrapper  p {
+    font-family: "LatoRegular";
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+    margin-top: 15px;
+}
+
+.progress_line {
+    height: 3px;
+    width: 170px;
+    background-color: var(--colorUltraLightGrey);
+}
+
+.progress_background {
+    background-color: var(--colorLightGrey);
+    height: 100%;
+}
+
+.line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 2px;
+    width: 100%;
+    background-color: var(--colorLightGrey);
 }
