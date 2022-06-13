@@ -26,13 +26,29 @@ header > img {
     object-fit: cover;
 }
 
-header > h1 {
-    align-self: center;
-    margin: 0 0 0 5%;
+header > div {
+    flex-grow: 1;
+    margin: 67px 0 0 5%;
+}
+
+header h1 {
+    width: max-content;
     font-family: "MontserratLight", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 12px;
+    color: var(--colorWhite);
+}
+
+header p {
+    margin: 0 auto;
+    width: max-content;    
+    margin-top: 5px;
+    font-family: "MontserratLight", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: lowercase;
+    letter-spacing: 5px;
     color: var(--colorWhite);
 }
 
@@ -93,6 +109,28 @@ section > h2 {
     letter-spacing: 2px;
 }
 
+hr {
+    margin: 15px 25%;
+    margin-bottom: 25px;
+}
+.example__code code {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+
+.example__code pre {
+    position: relative;
+    margin-top: 10px;
+    left: -30px;
+    font-family: "MontserratLight", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: var(--colorWhite);
+}
+
 section.current {
     display: block;
 }
@@ -124,4 +162,35 @@ footer {
     background-color: var(--colorLightGrey);
     height: 100%;
     flex-grow: 1;
+}
+
+.footer__right > ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__right li {
+    max-height: 20px;
+    list-style: none;
+}
+
+.footer__right a {
+    font-family: "MontserratMedium", sans-serif;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: var(--colorWhite);
+}
+
+.footer__right a:hover {
+    color: var(--colorYellow);
+}
+
+
+@media (max-width: 700px) {
+    header h1 {
+        letter-spacing: 4px;
+    }
 }
