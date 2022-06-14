@@ -1,0 +1,9 @@
+:root {
+    --colorWhite: rgb(255, 255, 255);
+    --colorYellow: rgb(254, 123, 0);
+    --colorFontsGrey: rgb(45, 45, 45);
+    --colorFontsWhite: rgb(255, 255, 255);
+    --colorGrey: rgb(30, 31, 37);
+    --colorLightGrey: rgb(48, 50, 59);
+    --colorUltraLightGrey: rgb(41, 43, 51);
+}
