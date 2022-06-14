@@ -113,22 +113,123 @@ hr {
     margin: 15px 25%;
     margin-bottom: 25px;
 }
-.example__code code {
+
+.about__me p {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 200px;
+    font-family: "MontserratLight", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    color: var(--colorWhite);
+}
+
+.skills ul {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.skills li {
+    list-style: none;
+    font-family: "MontserratLight", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: var(--colorWhite);
+    margin-top: 5px;
+}
+
+.education p {
+    margin: 0 auto;
+    font-family: "MontserratLight", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: var(--colorWhite);
+    width: max-content;
+    max-width: 80%;
+}
+
+.projects ul {
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.projects li,a {
+    list-style: none;
+    text-decoration: none;
+    font-family: "MontserratLight", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: var(--colorWhite);
+}
+
+.projects a:hover {
+    color: var(--colorYellow);
+}
+
+.example__code pre {
     display: block;
     margin: 0 auto;
     width: 200px;
     height: 200px;
 }
 
-.example__code pre {
+.example__code code {
     position: relative;
-    margin-top: 10px;
+    top: -20px;
     left: -30px;
     font-family: "MontserratLight", sans-serif;
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 5px;
     color: var(--colorWhite);
+}
+
+.language ul {
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+}
+
+.language li {
+    list-style: none;
+    font-family: "MontserratLight", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: var(--colorWhite);
+    margin-top: 5px;
+}
+
+.contacts ul {
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+}
+
+.contacts li {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.contacts a {
+    font-family: "MontserratLight", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: var(--colorWhite);
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    color: var(--colorYellow);
 }
 
 section.current {
@@ -182,6 +283,11 @@ footer {
     letter-spacing: 2px;
     font-size: 14px;
     color: var(--colorWhite);
+}
+
+.footer__right img {
+    width: 50px;
+    height: 20px;
 }
 
 .footer__right a:hover {
